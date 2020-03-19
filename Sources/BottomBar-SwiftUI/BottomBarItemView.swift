@@ -24,8 +24,7 @@ public struct BottomBarItemView: View {
                     .fontWeight(.regular)
             }
         }
-        .padding([.top, .bottom], 4)
-        .padding([.leading, .trailing], 8)
+        .padding(8)
         .background(
             Capsule()
                 .fill(isSelected ? item.color.opacity(0.2) : Color.clear)
