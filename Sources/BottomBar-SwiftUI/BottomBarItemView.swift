@@ -15,13 +15,13 @@ public struct BottomBarItemView: View {
     public var body: some View {
         HStack {
             Image(systemName: item.icon)
-                .imageScale(.large)
-                .foregroundColor(isSelected ? item.color : .primary)
+                .imageScale(.medium)
+                .foregroundColor(isSelected ? item.color : .secondary)
             
             if isSelected {
                 Text(item.title)
                     .foregroundColor(item.color)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.regular)
             }
         }
         .padding()
