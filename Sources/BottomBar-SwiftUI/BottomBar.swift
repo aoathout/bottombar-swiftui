@@ -37,7 +37,8 @@ public struct BottomBar : View {
             }
         }
 //        .padding()
-        .animation(.default)
+//        .animation(.default)
+          .animation(.easeInOut(duration: 0.1))
     }
 }
 
